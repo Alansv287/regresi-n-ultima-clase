@@ -1,0 +1,6 @@
+##regresión lineal con R datos de iris##
+plot(iris$Sepal.Length, iris$Petal.Length)
+abline(regresion_largo,col = "red") ##linea de regresion##
+##modelo de regresión lineal##
+regresion_largo <- lm(Petal.Length ~ Sepal.Length, data = iris)
+summary(regresion_largo)
